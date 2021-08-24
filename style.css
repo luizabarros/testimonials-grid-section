@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+:root {
+    font-size: 62.5%;
+    --moderate-violet: #7541c8;
+    --very-dark-grayish-blue: #48556a;
+    --very-dark-blackish-blue: #19212e;
+    --light-grayish-blue: #ecf2f8;
+    --light-gray: #cfcfcf;
+    --box-shadow: #00000020;
+    --background: #ecf2f8;
+    --white: #ffffff;
+    --white-50: #ffffff80;
+    --white-70: #ffffffB3;
+    --black-50: #00000080;
+}
+
+body {
+    background: var(--background);
+    min-width: 100vw;
+    min-height: 100vh;
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main.container {
+    display: grid;
+    grid-template-columns: repeat(4, 210px);
+    grid-template-areas: 
+    "daniel     daniel      jonathan    kira"
+    "jeanette   patrick     patrick     kira";
+    gap: 20px;
+}
+
+@media only screen and (max-width: 960px) {
+    main.container {
+        grid-template-columns: minmax(250px, 600px);
+        grid-template-areas: 
+        "daniel"
+        "jonathan"    
+        "kira"
+        "jeanette"
+        "patrick";
+    }
+}
+
+.section {
+    border-radius: 1rem;
+    box-shadow: .5rem .5rem 1.5rem var(--box-shadow);
+    padding: 2rem;
+}
+
+.section .user-info img {
+    border-radius: 3rem;
+    width: 3.2rem;
+}
+
+.section .user-info {
+    display: flex;
+    align-items: center;
+}
+
+.section .user-info .name-academic {
+    padding-left: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.section .user-info .name-academic span {
+    display: block;
+}
+
+.section .user-info .name-academic .name-white {
+    color: var(--white);
+}
+
+.section .user-info .name-academic .academic-white-50 {
+    color: var(--white-50);
+}
+
+.section .user-info .name-academic .academic-black-50 {
+    color: var(--black-50);
+}
+
+.section .first-review {
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 1.5rem 0;
+}
+
+.section .white-text {
+    color: var(--white);
+}
+
+.section .second-review {
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.section .white-50-text {
+    color: var(--white-50);
+}
+
+.section .black-50-text {
+    color: var(--black-50);
+}
+
+.daniel {
+    background: var(--moderate-violet) url(assets/bg-pattern-quotation.svg) no-repeat 80% top;
+    grid-column: daniel;
+}
+
+.jonathan {
+    background: var(--very-dark-grayish-blue);
+    grid-column: jonathan;
+}
+
+.kira {
+    background: var(--white);
+    grid-column: kira;
+    grid-row: span 2;
+}
+
+.jeanette {
+    background: var(--white);
+    grid-column: jeanette;
+}
+
+.patrick {
+    background: var(--very-dark-blackish-blue);
+    grid-column: patrick;
+}
