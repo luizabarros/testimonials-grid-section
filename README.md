@@ -4,10 +4,10 @@ A testimonials grid section made with HTML and CSS.
 ### Final Result
 
 ### Desktop Version
-<img src="assets/final-version-imgs/desktop-version.jpg" alt="Web Version"/>
+<img src="assets/final-version-imgs/desktop-design.jpg" alt="Web Version"/>
 
 ### Mobile Version
-<img src="assets/final-version-imgs/mobile-version.jpg" alt="Mobile Version"/>
+<img src="assets/final-version-imgs/mobile-design.jpg" alt="Mobile Version"/>
 
 ## 🚀 Starting
 
