@@ -75,19 +75,19 @@ main.container {
     font-weight: 500;
 }
 
-.section .user-info .name-academic span {
+.section .name-academic span {
     display: block;
 }
 
-.section .user-info .name-academic .name-white {
+.section .name-academic .name-white {
     color: var(--white);
 }
 
-.section .user-info .name-academic .academic-white-50 {
+.section .name-academic .academic-white-50 {
     color: var(--white-50);
 }
 
-.section .user-info .name-academic .academic-black-50 {
+.section .name-academic .academic-black-50 {
     color: var(--black-50);
 }
 
